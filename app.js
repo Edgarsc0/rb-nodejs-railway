@@ -416,7 +416,8 @@ app.post('/consultarOrden' , (req , res) =>{
             var idOrden = Object.values(r[0]);
 
             if(idOrden[0] == undefined){
-
+                res.sendFile(__dirname + '/PUBLIC/error.html');
+            }else{
                 res.send('<!DOCTYPE html>'+
                         '<html>'+
                             '<head>'+
@@ -588,13 +589,7 @@ app.post('/consultarOrden' , (req , res) =>{
                             '</footer>'+
                         '</body>'+
                         '</html>');
-
-                    }
-                    else{
-
-                        res.sendFile(__dirname + '/PUBLIC/error.html');
-                
-                    }
+            }
 
         });
 
