@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // ARCHIVOS DE LA RUTA QUE SON PUBLICOS
-app.use(express.static('public'));
+app.use(express.static('PUBLIC'));
 
 // METODO POST AGREGAR ORDENES DE ASEGURADORA
 app.post('/agregarOrden' , (req , res) =>{
