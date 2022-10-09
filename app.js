@@ -11,15 +11,18 @@ var bodyParser = require('body-parser');
 // CONEXION A LA BASE DE DATOS
 var con = mysql.createConnection({
 
-    host : 'localhost',
-    user : 'root',
-    port : 8000,
-    password : 'n0m3l0',
-    database : 'aseguradora'
-
+    host:"containers-us-west-33.railway.app",
+    user:"root",
+    port:"5837",
+    password:"tRHIHcSWTjKcPdwwoTRX",
+    database:"aseguradora"
 });
-
-con.connect();
+try{
+    con.connect();
+    console.log("se conecto a la bd");
+}catch(err){
+    console.log(err);
+}
 
 app.use(bodyParser.json());
 
@@ -48,7 +51,7 @@ app.post('/agregarOrden' , (req , res) =>{
 
             if(err){
                 
-                return console.log(error);
+                return console.log(err);
             
             }
             else{
