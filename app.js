@@ -142,7 +142,7 @@ app.post('/agregarOrden' , (req , res) =>{
                                     '<br><br>'+
                                     '<h1>NO PIERDAS ESTE NUMERO, CON ESTE PODRAS CONSULTAR TU ORDEN</h1>'+
                                 '</div>'+
-                                '<a href="http://localhost:8000/">'+
+                                '<a href="/">'+
                                     'VUELVE A LA REGISTRADORA'+
                                 '</a>'+
                                 '<footer>'+
@@ -263,7 +263,7 @@ app.post('/eliminarOrden' , (req , res) =>{
                                 '<br><br>'+
                                 '<h1>GRACIAS POR SU PREFERENCIANTE</h1>'+
                             '</div>'+
-                            '<a href="http://localhost:8000/">'+
+                            '<a href="/">'+
                                 '<b>VUELVE A LA REGISTRADORA</b>'+
                             '</a>'+
                             '<footer>'+
@@ -382,7 +382,7 @@ app.post('/actualizarOrden' , (req , res) =>{
                             '<br><br>'+
                             '<h1>SE ACUTALIZO CORRECTAMENTE</h1>'+
                         '</div>'+
-                        '<a href="http://localhost:8000/">'+
+                        '<a href="/">'+
                             '<b>VUELVE A LA REGISTRADORA</b>'+
                         '</a>'+
                         '<footer>'+
@@ -581,7 +581,7 @@ app.post('/consultarOrden' , (req , res) =>{
                                         '<input type="submit" value = "BORRAR">'+ // EN CASO DE ELIMINAR
                                     '</div>'+
                                 '</form>'+
-                                '<b><a href="http://localhost:8000/">VOLVER A LA REGISTRADORA</a></b>'+
+                                '<b><a href="/">VOLVER A LA REGISTRADORA</a></b>'+
                             '</div>'+
                             '<footer>'+
                                 '<b>EMILIO RUIZ BETANZOS || 5IV7</b>'+
